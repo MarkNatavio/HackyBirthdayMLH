@@ -39,6 +39,8 @@ var randomItem = quotes[Math.floor(Math.random() * quotes.length)];
 
 document.getElementById("quotes").innerHTML = "<h1>" + randomItem + "</h1>";
 
+document.getElementById("w3schools").addEventListener("click", w3schools);
+
 document.getElementById("freecc").addEventListener("click", fcc);
 
 document.getElementById("codeac").addEventListener("click", codeac);
@@ -53,11 +55,21 @@ document.getElementById("github").addEventListener("click", github);
 
 document.getElementById("stack").addEventListener("click", stack);
 
-document.getElementById("articles").addEventListener("click", articles);
-
 document.getElementById("codepen").addEventListener("click", codepen);
 
+document.getElementById("hackerrank").addEventListener("click", hackerrank);
+
+document.getElementById("leetcode").addEventListener("click", leetcode);
+
+document.getElementById("hackerearth").addEventListener("click", hackerearth);
+
+document.getElementById("devpost").addEventListener("click", devpost);
+
 document.getElementById("job").addEventListener("click", job);
+
+function w3schools(){
+  window.location='https://www.w3schools.com/';
+}
 
 function fcc(){
   window.location='https://www.freecodecamp.org';
@@ -87,12 +99,24 @@ function stack(){
   window.location='https://www.stackoverflow.com';
 }
 
-function articles(){
-  window.location='https://medium.freecodecamp.org/inspirational-success-stories-from-self-taught-web-developers-4f6f375cf17d';
-}
-
 function codepen(){
   window.location='https://www.codepen.io'
+}
+
+function hackerrank(){
+	window.location='https://www.hackerrank.com/';
+}
+
+function leetcode(){
+	window.location='https://leetcode.com/';
+}
+
+function hackerearth(){
+	window.location='https://www.hackerearth.com/';
+}
+
+function devpost(){
+  window.location='https://devpost.com/';
 }
 
 function job(){
