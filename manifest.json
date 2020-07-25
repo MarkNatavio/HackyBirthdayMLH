@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Don't Give Up!",
+  "description": "Provides inspirational quotes to motivate a new or seasoned programmer. Also provides useful reasources to help out a new programmer",
+  "version": "1.0",
+  "author": "The High Ground",
+
+  "browser_action": {
+    "default_title": "Don't give up!"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "permissions": ["activeTab", "bookmarks", "storage"]
+}
